@@ -24,7 +24,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Games
-                        </a>
+                        </a>    
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="mariorpg.html">Super Mario RPG</a></li>
                             <li><a class="dropdown-item" href="zeldaoot.html">Zelda Ocarina of Time</a></li>
@@ -36,10 +36,88 @@
             </div>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="formModalLabel">What's your favorite game?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="InputEmail1" class="form-label mt-4">Email address</label>
+                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label mt-4" for="inputDefault">Name of your Favorite Game</label>
+                                <input type="text" class="form-control" placeholder="Video Game Name" id="inputDefault">
+                            </div>
+                            <div class="form-group">
+                                <label for="reasonTextarea" class="form-label mt-4">Why is this your favorite Video Game?</label>
+                                <textarea class="form-control" id="reasonTextarea" rows="3"></textarea>
+                            </div>
+
+                            <fieldset class="form-group">
+                                <legend class="mt-4">What Platform is this game played on?</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        PC/Mac
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Xbox
+                                    </label>
+                                </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Playstation
+                                    </label>
+                                </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Nintendo Switch
+                                    </label>
+                                </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Retro Console
+                                    </label>
+                                </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Other/Not Listed
+                                    </label>
+                                </div>
+                            </fieldset>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
     <div class="container my-5">
         <h2>Some of my Favorite Video Games!</h2>
         <p>I have Always Enjoyed playing Video Games in my free time. While I don't have a lot of time to play video games anymore, I still love playing them when I have a chance to. This Website showcases some of my favorite Video Games</p>
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#formModal">
+            Share your Favorite Game with Me!
+        </button>
     </div>
 
     <div class="container text-center">
